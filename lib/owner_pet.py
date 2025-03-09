@@ -17,7 +17,7 @@ class Pet:
     @pet_type.setter
     def pet_type(self, pet_type):
         if pet_type not in self.PET_TYPES:
-            raise Exception('Not a valid')
+            raise Exception('Not a valid type of pet')
         self._pet_type = pet_type
 
     @property
